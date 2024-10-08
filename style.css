@@ -6,20 +6,28 @@
     font-family: "Roboto Mono", monospace;
 }
 
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    background-color: light-dark(#fff, #090909);
+}
+
 button {
-    color: #090909;
+    color: light-dark(#090909, #fff);
     padding: 0.7em 1.7em;
     font-size: 18px;
     border-radius: 0.5em;
-    background: #fff;
+    background: light-dark(#fff, #090909);
     cursor: pointer;
-    border: 1px solid #e8e8e8;
+    border: 1px solid light-dark(#e8e8e8, #090909);
     transition: all 0.3s linear;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
 button:active {
-    color: #666;
+    color: light-dark(#666, #090909);
     box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
 }
 
@@ -44,6 +52,7 @@ details {
     cursor: pointer;
     margin: 16px 12px;
     transition: all 0.15s linear;
+    background-color: #fff;
 }
 
 summary {
