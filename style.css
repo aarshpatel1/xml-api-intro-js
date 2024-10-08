@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+details {
+    border: 1px solid black;
+    max-width: 400px;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+summary {
+    font-weight: bold;
+}
+
+details[open] summary +p {
+    margin-top: 12px;
+    margin-left: 16px;
+}
