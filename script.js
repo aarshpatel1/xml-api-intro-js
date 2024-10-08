@@ -17,13 +17,15 @@ fetchButton.addEventListener("click", () => {
     }
 
     xhr.send()
+
+    fetchButton.style.display = "none"
 })
 
 
 function displayUsers(users) {
     const displayData = document.getElementById("display-data")
     displayData.innerHTML = ""
-    
+
     users.forEach((user) => {
         displayData.innerHTML += `
          <details>
