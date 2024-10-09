@@ -15,6 +15,7 @@ body {
 }
 
 button {
+    border: none;
     color: light-dark(#090909, #fff);
     padding: 0.7em 1.7em;
     font-size: 18px;
@@ -28,7 +29,7 @@ button {
 
 button:active {
     color: light-dark(#666, #090909);
-    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+    box-shadow: inset 4px 4px 12px light-dark(#c5c5c5, #3a3a3a), inset -4px -4px 12px light-dark(#ffffff, #090909);
 }
 
 .container {
@@ -52,7 +53,7 @@ details {
     cursor: pointer;
     margin: 16px 12px;
     transition: all 0.15s linear;
-    background-color: #fff;
+    background-color: light-dark(#fff, gray);
 }
 
 summary {
